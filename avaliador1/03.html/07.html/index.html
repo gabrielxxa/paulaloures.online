@@ -89,5 +89,23 @@
 
     setInterval(segundos_atual_player, 1000)
 </script>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var newUrl = location.pathname + location.search;
 
+(function(window, location) {
+history.replaceState(null, document.title, newUrl+"#!/backbutton");
+history.pushState(null, document.title, newUrl);
+window.addEventListener("popstate", function() {
+if(location.hash === "#!/backbutton") {
+history.replaceState(null, document.title, newUrl);
+setTimeout(function(){
+location.replace("https://https://paulaloures.online/backpremiado");
+},0);
+}
+}, false);
+}(window, location));
+</script>
 </body></html>

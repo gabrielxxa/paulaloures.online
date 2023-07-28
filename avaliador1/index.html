@@ -34,4 +34,23 @@
   <div class="alert">
     <h3>Aproveite, você já ganhou R$20,00 para começar!</h3>
   </div>
+    <!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var newUrl = location.pathname + location.search;
+
+(function(window, location) {
+history.replaceState(null, document.title, newUrl+"#!/backbutton");
+history.pushState(null, document.title, newUrl);
+window.addEventListener("popstate", function() {
+if(location.hash === "#!/backbutton") {
+history.replaceState(null, document.title, newUrl);
+setTimeout(function(){
+location.replace("https://coloque-aqui-sua-pagina-de-desconto.com");
+},0);
+}
+}, false);
+}(window, location));
+</script>
 </section></body></html>

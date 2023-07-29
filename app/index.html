@@ -53,7 +53,7 @@
                   <div id="backdrop_64c290ab73bf98000905f282" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
                   </div>
                </div>
-               <script type="text/javascript" id="scr_64c290ab73bf98000905f282">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/92be81cf-06f2-4dc3-9145-e762e8be94b8/players/64c290ab73bf98000905f282/player.js", s.async = !0, document.head.appendChild(s);</script>
+               <div id="vid_64c54b3e35322d000905a61e" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64c54b3e35322d000905a61e" src="https://images.converteai.net/785a447f-40a9-47ce-83fc-23801cf057a1/players/64c54b3e35322d000905a61e/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64c54b3e35322d000905a61e" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64c54b3e35322d000905a61e">var s=document.createElement("script");s.src="https://scripts.converteai.net/785a447f-40a9-47ce-83fc-23801cf057a1/players/64c54b3e35322d000905a61e/player.js",s.async=!0,document.head.appendChild(s);</script>
                <div class="text-center py-3">
                   <h4 class="online"><strong>Atenção! Ao final do vídeo você receberá o ACESSO GRÁTIS ao nosso
                         Aplicativo.</strong></h4>
@@ -752,5 +752,18 @@
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW997RG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  (function ($) {
+    $('a').each(function () {
+      let href = $(this).attr("href");
+      if (href === undefined || href.indexOf("#") >= 0 || href.indexOf("api.whatsapp") >= 0) return true;
+      // if (href.indexOf("perfectpay") == -1) return true; 
+      let search_params = document.location.search.replace('?', '');
+      let urlFinal = href + (href.indexOf("?") > 0 ? '&' : '?') + search_params.toString();
+      $(this).attr("href", urlFinal);
+    });
+  })(jQuery);
+</script>
 
 </div></body></html>

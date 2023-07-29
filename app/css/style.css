@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.barra {
+    background-color: #49d6aa;
+    font-size: 14px;
+    color: #0c3126;
+}
+
+.barra p {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.aviator {
+    max-width: 12em;
+}
+
+.purple {
+    background: #49d6aa;
+}
+
+.white {
+    background: white;
+}
+
+.disclaimer, .disclaimer a  {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #666; 
+}
+
+.mensagens {
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: -1px;
+    text-shadow: 0 0 60px #000;
+}
+
+h1 span, .barra span {
+    color: #bfff00;
+}
+
+h3 span {
+    color: #0e4a37 !important;
+}
+
+h4.online{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+h4.online span {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#panda-57768f2d-4bfa-4c79-ba8d-b6c6963ca128 {
+    border-radius: 20px !important;
+    box-shadow: 0 0 60px #000;
+}
+
+.player-depoimentos {
+    width: 100%;
+    max-height: 420px;
+}
+
+.volume {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.footer {
+    font-size: 12px;
+    color: #999;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes pisca {
+  70% {
+    box-shadow: 0 0 0 25px rgb(0,0,0,0);
+    
+  }
+    100% {
+    box-shadow: 0 0 0 0 rgb(0,0,0,0);
+  }
+}
+
+button {
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #00BF00;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px -6px #ffff;
+    padding: 20px 180px;
+    border: none;
+    transform: scale(1);
+    animation: pisca 1.5s infinite;
+}
+
+.btn-app {
+    background-color: #cf2828;
+    box-shadow: none;
+}
+
+.icon-grande {
+    font-size: 54px;
+    color: #ff0000;
+}
+
+.garantia, .depoimentos, .faq, .como-funciona {
+    color: #FFF;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.garantia h3, .depoimentos h3, .faq h3, .como-funciona h3 {
+    font-weight: 600;
+}
+
+.garantia img {
+    margin: 25px 0;
+}
+
+.depoimentos h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.faq h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fe74b6;
+    text-align: left;
+}
+
+.faq p {
+    text-align: left;
+}
+
+.esconder {
+    display: ;
+}
+
+.fb-comments {
+    border: 1px solid #e9ebee!important;
+    border-radius: 18px;
+    padding: 12px;
+    margin: auto;
+    position: relative;
+    color: #888;
+}
+
+.fb-comments {
+    background-color: #fff!important;
+    border: 1px solid #e9ebee!important;
+}
+
+.fb-comments {
+    font-family: Helvetica,sans-serif;
+}
+
+.fb-comments-header {
+    padding: 0;
+    border-bottom: 1px solid #e9ebee!important;
+}
+
+.fb-comments-header span {
+    color: #000;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.fb-comments-comment {
+    border: none!important;
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.fb-comments-comment-img {
+    vertical-align: top;
+    width: 48px;
+    padding-right: 5px;
+}
+
+.fb-comments-comment-img img {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.fb-comments-comment-text {
+    font-weight: 400;
+    font-size: .9em;
+    color: #050505;
+    border-radius: 21px;
+    background-color: #f0f2f5!important;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+}
+
+.fb-comments-comment-name {
+    font-size: .9em;
+}
+
+.fb-comments-comment-name name {
+    color: #365899;
+    text-decoration: none!important;
+    font-weight: 700;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fb-comments-comment-actions {
+    padding: 0 2px!important;
+}
+
+.fb-comments-comment-actions like, .fb-comments-comment-actions reply {
+    font-size: .75em;
+    color: #888;
+    font-weight: 600;
+    text-decoration: none!important;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fb-comments-comment-actions like, .fb-comments-comment-actions reply {
+    font-size: .75em;
+    color: #888;
+    font-weight: 600;
+    text-decoration: none!important;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fb-comments-comment-actions likes {
+    font-size: 13px;
+    background: url(../images/likes.png);
+    background-repeat: no-repeat;
+    padding-left: 43px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    margin-top: -10px;
+    float: right;
+    background-color: #fff!important;
+    border: solid #eaebef;
+    border-radius: 19px;
+}
+
+.fb-comments-comment-actions date {
+    font-size: .75em;
+    color: #90949c;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.fb-comments-reply-wrapper {
+    margin-left: 60px;
+    border-left: 1px dotted #e9ebee!important;
+    padding-left: 5px;
+}
+
+h4.fakebook {
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .location p {
+        font-size: 16px;
+    }
+    .logo {
+        max-width: 280px;
+    }
+    
+    h1 {
+        font-size: 28px !important;
+    }
+
+    .garantia {
+        text-align: center;
+    }
+
+    .garantia img {
+        width: 240px;
+        margin: 0;
+    }
+}

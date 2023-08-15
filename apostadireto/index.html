@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Gratuito - VSL (C)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&amp;display=swap" rel="stylesheet">
+
+    <script async src="js/gtm.js"></script><script>
+      var back_redirect_back_link = 'https://leonardolahan.com/back-td/';
+      history['pushState']({}, '', location['href']);
+      history['pushState']({}, '', location['href']);
+      window['onpopstate'] = function() {
+      setTimeout(function() {
+      location['href'] = back_redirect_back_link
+      }, 1)
+      }
+    </script>
+      
+    <style>
+        @keyframes pulsar {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .pulsar-element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 330px;
+      height: 50px;
+      background-color: #29FF00;
+      color: white;
+      text-decoration: none;
+      font-size: large;
+      font-weight: 900;
+      border-radius: 12px;
+      animation: pulsar 2s ease-in-out infinite;
+    }
+
+    .pulsar-element:hover {
+        background: #35d116;
+    }
+
+    .div {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .wrap {
+      padding: 0;
+      display: flex;
+      gap: 5px;
+      flex-direction: row;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .video-container {
+      width: 100%;
+      border: 2px solid red;
+    }
+
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .pulsar-element {
+            max-width: 300px; 
+            margin: 0 auto; 
+        }
+
+        .ocultar { display: none; }
+
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJDCSQ57');</script>
+    <!-- End Google Tag Manager -->
+
+  <script src="js/player.js" async></script><script src="js/player_1.js" async></script><script src="js/player_2.js" async></script><script src="js/player_3.js" async></script><script src="js/player_4.js" async></script></head>
+  <body style="
+    font-family: &#x27;Poppins&#x27;, sans-serif; 
+    margin: 0; 
+    box-sizing: border-box;  
+    background: black; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    overflow-x: hidden;
+    ">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJDCSQ57" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <div style="
+          width: 100%;
+          height: 50px;
+          background: red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        ">
+        <p style="color: white; font-weight: 900; font-size: 16px;">Acesso se encerrando! Aproveite</p>
+        <a href style="color: white; font-weight: 700; font-size: 15px;">Agora!</a>
+      </div>
+      <div style="margin: 30px;">
+        <img style="width: 170px;" src="images/logo-black-tipster.png" alt="logo">
+      </div>
+    </header>
+
+    <section style="margin: 15px; margin-top: -30px;">
+        <div class="div">
+        </div>
+
+        <div class="div">
+            <div id="vid_64bf07fb899aeb00089098b8" style="position:relative;width:100%;padding: 56.25% 0 0;">
+                <img id="thumb_64bf07fb899aeb00089098b8" src="images/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                <div id="backdrop_64bf07fb899aeb00089098b8" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+                </div>
+            </div>
+            <script type="text/javascript" id="scr_64bf07fb899aeb00089098b8">
+                var s=document.createElement("script");s.src="https://scripts.converteai.net/09940bd8-7e79-49e1-9b92-91fc2e5cb287/players/64bf07fb899aeb00089098b8/player.js",s.async=!0,document.head.appendChild(s);
+            </script>
+
+            <h2 style="color: red; font-size: 15px; font-weight: 700;">ASSISTA ATÉ O FIM PARA TER O APP GRATIS!</h2>
+        </div>
+
+        <script type="text/javascript">
+            function exibirElementos() {
+                var elementosExibir = document.getElementsByClassName('ocultar');
+                for (var i = 0; i < elementosExibir.length; i++) {
+                    elementosExibir[i].style.display = 'block';
+                }
+            }
+            var tempoMinutos = 10;
+            var tempoSegundos = 40;
+            var tempoExibir = (tempoMinutos * 60000) + (tempoSegundos * 1000);
+            setTimeout(exibirElementos, tempoExibir);
+        </script>
+
+        <section class="ocultar">
+            <div class="div">
+                <h3 style="color: #29FF00; font-size: 15px; ">CLIQUE ABAIXO PARA TER ACESSO AO APP</h3>
+            </div>
+            <div class="div">
+                <a href="https://www.redirectmais.com/run/teste_04" class="pulsar-element" style="border: 2px solid #000;
+                padding: 2px 6px;">QUERO O APP AGORA</a>
+            </div>
+            
+            <div class="div" style="margin-top: 30px;">
+                <h2 style="color: red; font-size: 18px; font-weight: 900;">MAIS DE MEIO MILHÃO FATURADOS</h2>
+                <h2 style="color: white; font-size: 18px; font-weight: 900; margin-top: -10px; margin-bottom: 40px;">PELOS ALUNOS BLACK TIPSTER</h2>
+            </div>
+
+            <div class="wrap">
+                <div class="video-container">
+                    <div id="vid_6476123347265d0009b1f9d8" style="position:relative;width:100%;padding: 176.47058823529412% 0 0;"><img id="thumb_6476123347265d0009b1f9d8" src="images/thumbnail_1.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block; border: 1px dolid red;"><div id="backdrop_6476123347265d0009b1f9d8" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6476123347265d0009b1f9d8">var s=document.createElement("script");s.src="https://scripts.converteai.net/09940bd8-7e79-49e1-9b92-91fc2e5cb287/players/6476123347265d0009b1f9d8/player.js",s.async=!0,document.head.appendChild(s);</script>
+                </div>
+
+                <div class="video-container">
+                    <div id="vid_6476123047265d0009b1f9d6" style="position:relative;width:100%;padding: 181.51260504201682% 0 0;"><img id="thumb_6476123047265d0009b1f9d6" src="images/thumbnail_2.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6476123047265d0009b1f9d6" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6476123047265d0009b1f9d6">var s=document.createElement("script");s.src="https://scripts.converteai.net/09940bd8-7e79-49e1-9b92-91fc2e5cb287/players/6476123047265d0009b1f9d6/player.js",s.async=!0,document.head.appendChild(s);</script>
+                </div>
+            </div>
+
+            <div class="wrap">
+
+                <div class="video-container">
+                    <div id="vid_6476126047265d0009b1f9e6" style="position:relative;width:100%;padding: 178.21782178217822% 0 0;"><img id="thumb_6476126047265d0009b1f9e6" src="images/thumbnail_3.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6476126047265d0009b1f9e6" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6476126047265d0009b1f9e6">var s=document.createElement("script");s.src="https://scripts.converteai.net/09940bd8-7e79-49e1-9b92-91fc2e5cb287/players/6476126047265d0009b1f9e6/player.js",s.async=!0,document.head.appendChild(s);</script>
+            </div>
+
+            <div class="video-container">
+                <div id="vid_647613f1f218ab00097d151a" style="position:relative;width:100%;padding: 178.21782178217822% 0 0;"><img id="thumb_647613f1f218ab00097d151a" src="images/thumbnail_4.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_647613f1f218ab00097d151a" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_647613f1f218ab00097d151a">var s=document.createElement("script");s.src="https://scripts.converteai.net/09940bd8-7e79-49e1-9b92-91fc2e5cb287/players/647613f1f218ab00097d151a/player.js",s.async=!0,document.head.appendChild(s);</script>
+            </div>
+        </div>
+
+        <div class="div">
+            <h3 style="color: #29FF00; font-size: 15px; ">CLIQUE ABAIXO PARA TER ACESSO AO APP</h3>
+        </div>
+        <div class="div" style="margin-bottom: 50px;">
+            <a href="https://www.redirectmais.com/run/teste_04" class="pulsar-element" style="border: 2px solid #000;
+            padding: 2px 6px;">QUERO O APP AGORA</a>
+        </div>
+    
+        </section>
+    </section>
+  
+
+</body></html>

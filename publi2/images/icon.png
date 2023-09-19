@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publimoney</title>
+    <!-- Google Tag Manager -->
+<script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-LZDJYFEG8W&amp;l=dataLayer&amp;cx=c"></script><script src="../612762737702858" async=""></script><script async="" src="../js/fbevents.js"></script><script async="" src="../js/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJ3M3W5H');</script>
+  <!-- End Google Tag Manager -->
+    <script type="module" crossorigin="" src="../js/index-047d39af.js"></script>
+    <link rel="stylesheet" href="../css/index-14a7c9d1.css">
+  </head>
+  <body>
+    <script>
+
+      // Adiciona um ouvinte para o evento "popstate" (quando o usuário clica no botão de voltar)
+      window.addEventListener("popstate", function (event) {
+        // Redireciona para a página "backredirect.html"
+        window.location.href = "https://moneypubli.online/back-r";
+      });
+      
+   </script>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ3M3W5H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    
+  
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","612762737702858");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=612762737702858&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>

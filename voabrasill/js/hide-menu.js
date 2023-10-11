@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>{document.body.classList.contains("hidemenu")&&document.querySelectorAll("a").forEach((e=>{let t=e.getAttribute("href");e.setAttribute("href",`${t}?hidemenu=true`)}))}));

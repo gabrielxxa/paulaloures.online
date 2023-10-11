@@ -1,0 +1,1 @@
+function share(n){var o=n+(o=location.href);window.open(o,"_blank","width=600,height=700,top=300,left=300")}

@@ -1,0 +1,40 @@
+
+.top__share {
+    display: none !important;
+}
+
+.audima__content {
+    display: none !important;
+}
+
+.whatsapp__cta__single {
+    display: none !important;
+}
+
+.header__actions {
+    display: none !important;
+}
+
+.ot-sdk-container {
+    display: none !important;
+}
+
+.header__featured__links {
+    overflow: hidden;
+}
+
+.ot-sdk-container {
+    display: none !important;
+}
+
+.cta__button {
+    padding: 8px;
+    display: block;
+    color: #fff;
+    margin-top: 24px;
+    border-radius: 4px;
+    text-align: center;
+    background: #CC0000;
+    transition: .3s ease;
+    border: 1px solid transparent;
+}

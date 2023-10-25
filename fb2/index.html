@@ -1,0 +1,458 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotes Disponíveis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="foto.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-view">
+        <header>
+            <img src="images/header.png" alt="">
+        </header>
+        <div class="img-field-header">
+            <img id="img-header" src="images/imgcarrossel1.png" alt="">
+        </div>
+        <div class="logo-field">
+            <img src="images/logo_governo.png" alt="">
+        </div>
+        <div class="timer-field">
+            <div class="timer">
+                <div class="container-field">
+                    <span class="title-timer">Dias</span>
+                    <div class="container-timer">
+                        <span id="days">00</span>
+                    </div>
+                </div>
+                <span class="doispontos">:</span>
+                <div class="container-field">
+                    <span class="title-timer">Horas</span>
+                    <div class="container-timer">
+                        <span id="Hours">02</span>
+                    </div>
+                </div>
+                <span class="doispontos">:</span>
+                <div class="container-field">
+                    <span class="title-timer">Minutos</span>
+                    <div class="container-timer">
+                        <span id="mins">59</span>
+                    </div>
+                </div>
+                <span class="doispontos">:</span>
+                <div class="container-field">
+                    <span class="title-timer">Segundos</span>
+                    <div class="container-timer">
+                        <span id="seconds">58</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="img-field">
+            <img src="images/imagem_produtos.png" alt="">
+        </div>
+        <div class="card-compra">
+            
+            <div class="container infos">
+                <div class="info-data">
+                    <p>Data de abertura:</p>
+                    <p>16/10/2023</p>
+                </div>
+                <div class="info-origem">
+                    <p>Origem:</p>
+                    <p>RETIDOS/REEMBALADOS</p>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="info-container">
+                    <p>VISITAS: 8.746</p>
+                    <p>COMPRADORES: 814</p>
+                    <p>LANCES: 1.214</p>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">Lote Parcial - 10 caixas c/ 3 itens em cada caixa</p>
+                </div>
+                <div class="value-info">
+                    <p>R$ 729,90</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-alt"><b>ESGOTADO</b></button>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">Lote Parcial - 5 caixas c/ 3 itens em cada caixa</p>
+                </div>
+                <div class="value-info">
+                    <p>R$429,90</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-comprar" onclick="redirectCompra1()"><b>comprar 5 caixas</b></button>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">Lote Parcial - 2 caixas c/ 3 itens em cada caixa</p>
+                </div>
+                <div class="value-info">
+                    <p>R$249,90</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-comprar" onclick="redirectCompra2()"><b>comprar 2 caixas</b></button>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">Lote Parcial - 1 caixa c/ 3 itens em cada caixa</p>
+                </div>
+                <div class="value-info">
+                    <p>R$159,90</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-comprar" onclick="redirectCompra3()"><b>comprar 3 Unidades</b></button>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">Lote Parcial - 1 caixa c/ 1 item na caixa</p>
+                </div>
+                <div class="value-info">
+                    <p>R$99,90</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-alt"><b>ESGOTADO</b></button>
+                </div>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra" id="alt">Lote Completo (aprox 1.338 Itens) </p>
+                </div>
+                <div class="value-info">
+                    <p>R$287.298,45</p>
+                </div>
+                <div class="btn-field">
+                    <button class="btn-alt"><b>comprar/fazer oferta em lote completo</b></button>
+                </div>
+            </div>
+            <div class="progress-field">
+                <div class="progress-container">
+                    <span class="title-progress">% dos lotes já vendidos</span>
+                    <div class="bar-progress-field">
+                        <div class="bar-progress">
+                            <div class="progress"><span></span> <span>77%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert-field">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>O valor e quantidade final do lote completo é calculado após o encerramento da venda parcial.</p>
+            </div>
+            <div class="line-span"></div>
+            <div class="container">
+                <div class="title-container">
+                    <p class="title-lote-compra">LOTE DE PRODUTOS ELETRÔNICOS</p>
+                </div>
+                <div class="info-frete-field">
+                    <div class="item-info-frete">
+                        <i class="fa-solid fa-box"></i>
+                        <p>Produtos novos na embalagem original</p>
+                    </div>
+                    <div class="item-info-frete">
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Frete Grátis via Sedex para todo o Brasil</p>
+                    </div>
+                    <div class="item-info-frete">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>30 dias para trocas/reembolsos (mal funcionamento/defeitos)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tablee-section">
+            <div class="table">
+                <div class="title-bar-table">
+                    <p>últimos compradores:</p>
+                    <p>total: 814 compras(s)</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>login</th>
+                            <th>data</th>
+                            <th>lote</th>
+                            <th>descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>A*****78L</span>
+                                    <p>são paulo</p>
+                                </div>
+                            </td>
+                            <td id="data1">25/10/2023</td>
+                            <td>unitário</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>e*****RL</span>
+                                    <p>são paulo</p>
+                                </div>
+                            </td>
+                            <td id="data2">25/10/2023</td>
+                            <td>unitário</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>V*****LO</span>
+                                    <p>cabo frio</p>
+                                </div>
+                            </td>
+                            <td id="data3">25/10/2023</td>
+                            <td>parcial</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>R*****KA</span>
+                                    <p>são paulo</p>
+                                </div>
+                            </td>
+                            <td id="data4">25/10/2023</td>
+                            <td>parcial</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>F*****ID</span>
+                                    <p>canoas</p>
+                                </div>
+                            </td>
+                            <td id="data5">25/10/2023</td>
+                            <td>parcial</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>l*****IU</span>
+                                    <p>brasilia</p>
+                                </div>
+                            </td>
+                            <td id="data6">25/10/2023</td>
+                            <td>parcial</td>
+                            <td>pessoa física</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="square-text">
+                                    <span>T*****VA</span>
+                                    <p>ouro branco</p>
+                                </div>
+                            </td>
+                            <td id="data7">25/10/2023</td>
+                            <td>unitário</td>
+                            <td>pessoa física</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="line-span"></div>
+            </div>
+        </div>
+        <div class="details-product">
+            <div class="title-details">
+                <span>descrição detalhada</span>
+            </div>
+            <div class="info-detail">
+                <p>Ao realizar a compra de uma caixa, você garante 3 itens aleatorios e <br> lacrados dentro dela. Os itens serão da seguinte listagem:</p>
+                <br>
+                <span>- iPhones lacrados (do iPhone 12 ao iPhone 14) </span>
+                <br>
+                <span>- Televisores Samsung lacrados e novos  </span>
+                <br>
+                <span>- Notebooks Apple e Dell  </span>
+                <br>
+                <span>- JBL (caixa de som)  </span>
+                <br>
+                <span>- Playstation 5 lacrados </span>
+                <br>
+                <span>- Xbox One lacrados </span>
+                <br>
+                <br>
+                <br>
+                <p>A entrega é realizada através dos Correios, e o prazo máximo para recebimento é de 15 dias. O comprador não corre risco de taxações!</p>
+            </div>
+        </div>
+       <div class="comentarios-section">
+        <div class="elementor-widget-container">
+            <div id="comentarios_face"> <span class="titulo_comentario">7 comentários</span>
+              <!-- NÃO MEXA AQUI EM CIMA-->
+        
+        
+              <!-- INICIO DO COMENTARIO -->
+                <div class="perfil"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/1.jpg">
+                </noscript>
+                <img class=" ls-is-cached lazyloaded" src="images/320440_1_1695696572651246bc72b2b179429364.png">David Oliveira </span>
+                    <p>Recebi 2 iPhones e um notebook, puta que pariu to em choque!!! </p> <span class="infos">Responder · Curtir · Seguir · 2 min </span> </div>
+              <!-- FIM DO COMENTARIO -->
+                
+            
+              <!-- INICIO DO COMENTARIO -->
+                <div class="perfil"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/2.jpg">
+                </noscript>
+                <img class=" lazyloaded" src="images/320440_1_1695696572651246bc72c13906133050_1.png">Mariana Souza</span>
+                    <p>
+                        Pessoal recebi um video game xbox one com controles e 2 celulares samsumg, vou vender sera que por ser de lote desvaloriza?</p> <span class="infos">Responder · Curtir · Seguir · 3 min </span> </div>
+              <!-- FIM DO COMENTARIO -->
+
+               <!-- INICIO DO COMENTARIO -->
+               <div class="perfil"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/3.jpg">
+                </noscript>
+                <img class=" lazyloaded" src="images/320440_1_1695696572651246bc72dd9926703896.png">Maria Fernanda</span>
+                  <p>gente tem como escolher o que vem no lote parcial??</p> <span class="infos">Responder · Curtir · Seguir · 5 min</span> </div>
+            <!-- FIM DO COMENTARIO -->
+              
+          
+            <!-- INICIO DO COMENTARIO || ESSE COMENTÁRIO EH UMA RESPOSTA -->
+              <div class="perfil perfil2"> <span class="nome">
+                  <noscript>
+                    <img src="img/comentarios/5.jpg">
+                  </noscript>
+                  <img class=" lazyloaded" src="images/320440_1_1695696572651246bc72ec7824576369.png"> Ana Oliveira</span>
+                  <p> Oi querida! Nao tem como escolher, por isso eu sempre vejo lotes que todos os produtos sao bons e sei que vou gostar, esse ta coom um otimo custo beneficio, de tudo ai eu só nao usaria o drone, mas vale uma fortuna kkkk</p> <span class="infos">Responder · Curtir · Seguir · 3 min </span> </div>
+            <!-- FIM DO COMENTARIO RESPOSTA -->
+
+            
+            <!-- INICIO DO COMENTARIO || ESSE COMENTÁRIO EH UMA RESPOSTA -->
+            <div class="perfil perfil2"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/5.jpg">
+                </noscript>
+                <img class=" lazyloaded" src="images/320440_1_1695696572651246bc7307c502304900.png"> Evandro Soares</span>
+                <p> Nao da pra escolher, ultimas comprei 3 parciais da sone e veio 2 controles de ps5 e um jogo, mas nada do videogame kkkk, mas faz parte, vendi no mercado livre e lucrei +/- uns 600 reais</p> <span class="infos">Responder · Curtir · Seguir · 2 min </span> </div>
+          <!-- FIM DO COMENTARIO RESPOSTA -->
+                
+            
+              <!-- INICIO DO COMENTARIO -->
+                <div class="perfil"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/4.jpg">
+                </noscript>
+                <img class=" lazyloaded" src="images/320440_1_1695696572651246bc73221356087804.png">Rodrigo Moraes </span>
+                    <p>Boa tarde chegou um iPhone 12 uma jbl e um ps4 mas as intruções estao todas em ingles como faço pra liga o console na tv de tubo?!</p> <span class="infos">Responder · Curtir · Seguir · 10 min </span> </div>
+              <!-- FIM DO COMENTARIO -->
+                
+            
+              <!-- INICIO DO COMENTARIO -->
+                <div class="perfil"> <span class="nome">
+                <noscript>
+                  <img src="img/comentarios/6.jpg">
+                </noscript>
+                <img class=" lazyloaded" src="images/320440_1_1695696572651246bc73301507217870.png" data-src="img/comentarios/5.jpg">Maria clara </span>
+                    <p>Pessoal que comprou o parcial desse, demorou para enviarem? O ultimo da magalu levou uns 8 dias, mas queria comprar pra presente precisava ser rapido.</p> <span class="infos">Responder · Curtir · Seguir · 12 min </span> </div>
+              <!-- FIM DO COMENTARIO -->
+                
+            
+        
+              <!-- NÃO MEXA AQUI EM BAIXO -->
+            </div>
+        </div>
+    </div>
+        <footer>
+           <img src="images/rodapecelular.png" alt="">
+        </footer>
+    </div>
+    <script>
+        //BOTAO COMPRA 5 CAIXAS
+        function redirectCompra1(){
+            window.location.href = 'https://sitehomologadoficial.space/brb-leilao/fb-gru/dados/42990'
+        }
+        //BOTAO 2 CAIXAS
+        function redirectCompra2(){
+            window.location.href = 'https://sitehomologadoficial.space/brb-leilao/fb-gru/dados/24990'
+        }
+        //BOTAO 3 UNIDADES
+        function redirectCompra3(){
+            window.location.href = 'https://sitehomologadoficial.space/brb-leilao/fb-gru/dados/15990'
+        }
+        var hours = 3;
+        var mins = 0;
+        var seconds = 0;
+        function countdown() {
+            var hoursEl = document.getElementById('Hours')
+            var minsEl = document.getElementById('mins')
+            var secondsEl = document.getElementById('seconds')
+            seconds--;
+
+            if (seconds < 0) {
+                seconds = 59;
+                mins--;
+
+                if (mins < 0) {
+                    mins = 59;
+                    hours--;
+
+                    if (hours < 0) {
+                        hours = 3;
+                    }
+                }
+            }
+
+            hoursEl.innerHTML = formatTime(hours);
+            minsEl.innerHTML = formatTime(mins);
+            secondsEl.innerHTML = formatTime(seconds);
+        }
+
+        function formatTime(timer) {
+            return timer < 10 ? `0${timer}` : timer;
+        }
+
+        countdown(); // Chame a função para configurar o contador inicialmente
+
+        setInterval(countdown, 1000); // Atualize o contador a cada segundo
+        function formatarData(data) {
+
+            const dia = data.getDate();
+            const mes = data.getMonth();
+            const ano = data.getFullYear();
+            const dataFormatada = `${dia}/${Number(mes)+1}/${ano}`
+            document.getElementById('data1').innerHTML = dataFormatada
+            document.getElementById('data2').innerHTML = dataFormatada
+            document.getElementById('data3').innerHTML = dataFormatada
+            document.getElementById('data4').innerHTML = dataFormatada
+            document.getElementById('data5').innerHTML = dataFormatada
+            document.getElementById('data6').innerHTML = dataFormatada
+            document.getElementById('data7').innerHTML = dataFormatada
+        }
+        const dataAtual = new Date();
+
+        const dataFormatada = formatarData(dataAtual);
+        
+    </script>
+
+</body></html>
